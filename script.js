@@ -37,14 +37,16 @@ buttons.forEach((item) => {
         } else if (temp == "glosbe_dict") {
             const [temp1, temp2] = temp;
             console.log(temp1, temp2);
-        }else if(temp == "scholar"){
+        } else if (temp == "scholar") {
             link = "https://scholar.google.com/scholar?hl=tr&as_sdt=0%2C5&q=";
+        } else if (temp == "playphraseme") {
+            link = `https://www.playphrase.me/#/search?q=`;
         }
 
         for (let i = 0; i < array.length; i++) {
             if (temp !== "glosbe_dict") {
                 window.open(link + array[i]);
-            }else if(temp == "scholar"){
+            } else if (temp == "scholar") {
                 window.open(link + array[i]);
             } else {
                 window.open(`https://tr.glosbe.com/ru/tr/${array[i]}`);
